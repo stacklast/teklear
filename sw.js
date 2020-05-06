@@ -36,11 +36,34 @@ self.addEventListener('activate', event=>{
 
 self.addEventListener('fetch', event =>{
 
-    const offlineResp = new Response(`
+    /*const offlineResp = new Response(`
     Bienvenido a mi pagina web
 
     Disculpa pero para usarla necesitas Internet
-    `);
+    `);*/
+
+    const offlineResp = new Response(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Bienvenido a mi pagina web
+
+        Disculpa pero para usarla necesitas Internet</h1>
+    </body>
+    </html>
+    `, { 
+            headers:{
+                'Content-Type':'text/html'
+            }
+        }
+    );
+
+   
 
     const resp = fetch(event.request)
     .catch(()=>{

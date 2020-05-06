@@ -16,4 +16,10 @@ if(navigator.serviceWorker){
     });
 
     
-}
+};
+
+if(window.caches){
+    caches.open('cache-v1.2').then( cache=>{
+        cache.add(/pages/offline.html);
+    });
+};
