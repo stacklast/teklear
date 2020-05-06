@@ -52,5 +52,5 @@ self.addEventListener('sync',event=>{
 //PUSH: manejar las push notifications
 
 self.addEventListener('push',event=>{
-    
+    console.log('NOtificacion');
 });
