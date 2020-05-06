@@ -34,5 +34,17 @@ self.addEventListener('activate', event=>{
 
 
 self.addEventListener('fetch', event =>{
+
+    //aplicar estrategias de cache
     console.log('SW:',event.request.url);
+});
+
+
+//SYNC: cuando recuperamos la conexion a internet
+
+self.addEventListener('sync',event=>{
+    console.log('tenemos conexion');
+
+    console.log(event);
+    console.log(event.tag);
 });
