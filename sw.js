@@ -47,10 +47,10 @@ self.addEventListener('fetch', event =>{
         return offlineResp;
     });
     //aplicar estrategias de cache
-    console.log('SW:',event.request.url);
+    //console.log('SW:',event.request.url);
 
 
-    event.respondWith(fetch(event.request));
+    //event.respondWith(fetch(event.request));
 });
 
 
