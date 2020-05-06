@@ -11,7 +11,7 @@ if(navigator.serviceWorker){
         }, 100);
         Notification.requestPermission().then( result => {
             console.log(result);
-            reg.showNotification('Hola Mundo');
+            result.showNotification('Hola Mundo');
         });
     });
 
