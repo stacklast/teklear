@@ -42,7 +42,7 @@ self.addEventListener('fetch', event =>{
     Disculpa pero para usarla necesitas Internet
     `);*/
 
-    const offlineResp = new Response(`
+    /*const offlineResp = new Response(`
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -61,7 +61,9 @@ self.addEventListener('fetch', event =>{
                 'Content-Type':'text/html'
             }
         }
-    );
+    );*/
+
+    const offlineResp = fetch('/ofline.html');
 
    
 
