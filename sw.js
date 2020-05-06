@@ -6,6 +6,7 @@ self.addEventListener('install', event=>{
     const instalacion = new Promise((resolve,reject)=>{
         setTimeout(()=>{
             console.log('SW: Instalaciones Terminadas');
+            self.skypWaiting();
             resolve();
         },1000);
     });
