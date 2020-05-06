@@ -17,7 +17,7 @@ self.addEventListener('install', event=>{
 
     //carga instantanea de los cambios
     //recomendar no usarlo
-    //self.skypWaiting();
+    //self.skipWaiting();
 
     event.waitUntil(
         instalacion
@@ -38,6 +38,9 @@ self.addEventListener('fetch', event =>{
 
     //aplicar estrategias de cache
     console.log('SW:',event.request.url);
+
+
+    event.respondWith(fetch(event.request));
 });
 
 
