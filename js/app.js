@@ -20,6 +20,12 @@ if(navigator.serviceWorker){
 
 if(window.caches){
     caches.open('cache-v1.2').then( cache =>{
-        cache.add('/pages/offline.html');
+        //cache.add('/offline.html');
+
+        cache.addAll([
+            '/index.html',
+            '/css/style.css',
+            '/images/logo.jpeg'
+        ]);
     });
 };
