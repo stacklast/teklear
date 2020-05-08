@@ -24,7 +24,7 @@ if(window.caches){
 
         cache.addAll([
             '/index.html',
-            '/css/style.css',
+            '/css/styles.css',
             '/images/logo.jpeg'
         ]);
     });
