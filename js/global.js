@@ -3,7 +3,7 @@ Theme by: WebThemez.com
 Note: Please use our back link in your site
 */
 $( function() {
-        var endDate = "May  3o, 2020 15:03:25";
+        var endDate = "May  30, 2020 15:03:25";
 
         $('.countdown.simple').countdown({ date: endDate });
 
